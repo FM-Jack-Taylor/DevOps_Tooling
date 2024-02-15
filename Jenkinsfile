@@ -3,19 +3,25 @@ pipeline {
         label "worker"
     }
     stages {
-        stage('Build'){
+        stage('cleanup'){
             steps{
-                sh build.sh
+                echo 'Cleaning up'
+                sh
+                echo 'Cleanup finished
             }
         }
-        stage('Test'){
+        stage('Build'){
             steps{
-                sh Test.sh
+                echo 'Building'
+                sh
+                echo 'Building finished'
             }
         }
         stage('Deploy'){
             steps{
-                sh Deploy.sh
+                echo 'deploying'
+                sh
+                echo 'deployment finished'
             }
         }
     }
