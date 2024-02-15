@@ -5,17 +5,17 @@ pipeline {
     stages {
         stage('Build'){
             steps{
-                ./build.sh
+                /build.sh
             }
         }
         stage('Test'){
             steps{
-                ./Test.sh
+                /Test.sh
             }
         }
         stage('Deploy'){
             steps{
-                ./Deploy.sh
+                /Deploy.sh
             }
         }
     }
