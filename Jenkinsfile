@@ -7,7 +7,7 @@ pipeline {
             steps{
                 echo 'Cleaning up'
                 sh 'ls'
-                bash 'cleanup.sh || true'
+                bash 'cleanup.sh'
                 echo 'Cleanup finished'
             }
         }
