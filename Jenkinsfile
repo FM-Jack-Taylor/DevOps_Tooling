@@ -6,7 +6,7 @@ pipeline {
         stage('cleanup'){
             steps{
                 echo 'Cleaning up'
-                sh 'sh cleanup.sh || ture'
+                sh 'sh cleanup.sh || true
                 echo 'Cleanup finished'
             }
         }
