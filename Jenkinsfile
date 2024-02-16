@@ -14,14 +14,14 @@ pipeline {
         stage('Build'){
             steps{
                 echo 'Building'
-                sh 'build.sh'
+                sh 'sh build.sh'
                 echo 'Building finished'
             }
         }
         stage('Deploy'){
             steps{
                 echo 'deploying'
-                sh 'deploy.sh'
+                sh 'sh deploy.sh'
                 echo 'deployment finished'
             }
         }
