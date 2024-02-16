@@ -6,7 +6,7 @@ pipeline {
         stage('cleanup'){
             steps{
                 echo 'Cleaning up'
-                ls
+                sh 'ls'
                 sh 'cleanup.sh'
                 echo 'Cleanup finished'
             }
