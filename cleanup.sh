@@ -1,4 +1,4 @@
-docker rm -f $(docker ps -aq)
-docker rmi -f $(docker images)
-docker rm -f $(docker ps -aq)
-docker rmi -f $(docker images)
+docker rm -f $(docker ps -aq) ||ture
+docker rmi -f $(docker images) ||ture
+docker rm -f $(docker ps -aq) ||ture
+docker rmi -f $(docker images) ||ture
