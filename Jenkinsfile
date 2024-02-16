@@ -7,7 +7,7 @@ pipeline {
             steps{
                 echo 'Cleaning up'
                 sh 'ls'
-                sh 'sh cleanup.sh || ture'
+                sh 'sh cleanup.sh'||ture
                 echo 'Cleanup finished'
             }
         }
