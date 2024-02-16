@@ -7,7 +7,7 @@ pipeline {
             steps{
                 echo 'Cleaning up'
                 sh 'cleanup.sh'
-                echo 'Cleanup finished
+                echo 'Cleanup finished'
             }
         }
         stage('Build'){
